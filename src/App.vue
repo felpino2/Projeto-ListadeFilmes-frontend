@@ -5,14 +5,10 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
+      <HelloWorld msg="Your superhero hub." />
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/login">Join us for free</RouterLink>
       </nav>
     </div>
   </header>
@@ -35,7 +31,7 @@ nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 nav a.router-link-exact-active {
@@ -46,14 +42,18 @@ nav a.router-link-exact-active:hover {
   background-color: transparent;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
 nav a:first-of-type {
   border: 0;
+}
+.register-button {
+  padding: 0.5rem;
+  background-color: #4444;
+  border: none;
+  border-radius: 5px;
+  color: #ffff;
+  cursor: pointer;
+  font-size:1rem;
+  transition: background-color 0.3s ease;
 }
 
 @media (min-width: 1024px) {
@@ -64,7 +64,7 @@ nav a:first-of-type {
   }
 
   .logo {
-    margin: 0 2rem 0 0;
+    margin: 20px 1rem 50px 1px;
   }
 
   header .wrapper {
