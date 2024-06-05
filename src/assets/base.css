@@ -1,5 +1,3 @@
-
-/* semantic color variables for this project */
 :root {
   --color-background: #181818;
   --color-text: rgb(235, 235, 235);
@@ -24,7 +22,6 @@ body {
     background-color 0.5s;
   line-height: 1.6;
   font-family:
-    TT-norms,
     sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
