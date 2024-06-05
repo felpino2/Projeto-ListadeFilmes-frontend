@@ -8,8 +8,11 @@ defineProps({
 </script>
 
 <template>
+  <h4>
+    <u>Learn more</u>
+  </h4>
   <div class="greetings">
-    <h1 class="white">{{ msg }}</h1>
+    <h2 class="white">{{ msg }}</h2>
     <h3>
       Keep in touch with your favorite franchises, track their stories and continuities - all in one site.
     </h3>
@@ -17,17 +20,27 @@ defineProps({
 </template>
 
 <style scoped>
-h1 {
-  font-weight: 750;
-  font-size: 3.3rem;
+h2 {
+  font-weight: 700;
+  font-size: 4rem;
   position: relative;
-  top: -9px;
+  top: 30px;
 }
 
 h3 {
-  font-weight: 1;
-  font-size: 2.2rem;
+  font-weight: lighter;
+  font-size: 3rem;
   position: relative;
+}
+
+h4 {
+  min-width: 15%;
+  max-width: 25%;
+  position: absolute;
+  bottom: 10px;
+  left: 190px;
+  font-weight: lighter;
+  font-size: 2rem;
 }
 
 .greetings h1,

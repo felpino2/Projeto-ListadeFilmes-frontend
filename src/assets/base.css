@@ -1,16 +1,8 @@
-/* color palette from <https://github.com/vuejs/theme> */
-:root {
-
-  --vt-c-black: #181818;
-  --vt-c-indigo: #272727;
-  --vt-c-text-dark-2: rgb(235, 235, 235);
-}
 
 /* semantic color variables for this project */
 :root {
-  --color-background: var(--vt-c-black);
-  --color-text: var(--vt-c-text-dark-2);
-
+  --color-background: #181818;
+  --color-text: rgb(235, 235, 235);
   --section-gap: 120px;
 }
 
@@ -18,12 +10,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
+  width: 670px;
+  margin: 35px;
   font-weight: normal;
 }
 
 body {
-  min-height: 100vh;
+  min-height: 90vh;
   color: var(--color-text);
   background: var(--color-background);
   transition:
@@ -31,7 +24,7 @@ body {
     background-color 0.5s;
   line-height: 1.6;
   font-family:
-    TT norms,
+    TT-norms,
     sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;

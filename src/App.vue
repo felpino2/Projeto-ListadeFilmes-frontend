@@ -4,11 +4,12 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
+
   <header>
     <div class="wrapper">
-      <HelloWorld msg="Your superhero hub." />
+      <HelloWorld msg="Your superhero hub."/>
       <nav>
-        <RouterLink to="/login">Join us for free</RouterLink>
+        <RouterLink to="/login"><button type="reset" class="register-button">Join for free</button></RouterLink>
       </nav>
     </div>
   </header>
@@ -28,32 +29,23 @@ header {
 }
 
 nav {
-  width: 100%;
+  width: 50%;
   font-size: 12px;
   text-align: center;
-  margin-top: 1rem;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a:first-of-type {
-  border: 0;
-}
 .register-button {
+  min-width: 100%;
+  max-width: 100%;
   padding: 0.5rem;
-  background-color: #4444;
-  border: none;
-  border-radius: 5px;
-  color: #ffff;
+  background-color: #FF914D;
+  border: 1px;
+  border-radius: 50px;
+  color: #000000;
   cursor: pointer;
-  font-size:1rem;
-  transition: background-color 0.3s ease;
+  font-size:2rem;
+  width: 200px;
+  height: 80px;
 }
 
 @media (min-width: 1024px) {
@@ -77,7 +69,6 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }

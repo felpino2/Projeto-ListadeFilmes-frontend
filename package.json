@@ -22,5 +22,9 @@
     "eslint-plugin-vue": "^9.23.0",
     "prettier": "^3.2.5",
     "vite": "^5.2.8"
-  }
+  },
+  "description": "https://heroflix.my.canva.site/",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }
