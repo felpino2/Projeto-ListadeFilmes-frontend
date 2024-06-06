@@ -7,6 +7,23 @@
   font-weight: normal;
 }
 
+.body {
+  height:770px;
+  width:1000px;
+  border: solid #eee;
+  border-width:1px 0;
+}
+
+.header, .footer {
+  height: 40px;
+  padding: 5px;
+}
+
+.footer {
+  border-bottom-right-radius:10px;
+  border-bottom-left-radius:10px;
+}
+
 a,
 .orange {
   text-decoration: none;
@@ -36,5 +53,5 @@ a,
 
 @font-face {
   font-family: TT-norms;
-  src:url("../assets/fonts/..");
+  src:url("../assets/fonts/TTNormsPro-Regular.ttf");
 }

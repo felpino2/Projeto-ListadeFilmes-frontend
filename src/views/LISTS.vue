@@ -10,12 +10,6 @@
     </p>
   </div>
 
-  <div>
-    <p>
-      ;-)
-    </p>
-  </div>
-
 </template>
 
 <style scoped>
