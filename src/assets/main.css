@@ -2,40 +2,23 @@
 
 #app {
   max-width: 1280px;
+  max-height: 100%;
   margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
 }
 
 .body {
-  height:770px;
-  width:1000px;
-  border: solid #eee;
-  border-width:1px 0;
-}
-
-.header, .footer {
-  height: 40px;
-  padding: 5px;
-}
-
-.footer {
-  border-bottom-right-radius:10px;
-  border-bottom-left-radius:10px;
+  height:70%;
+  width:50%;
 }
 
 a,
-.orange {
+.white {
   text-decoration: none;
-  color: #FF914D;
+  color: #ffffff;
   transition: 0.4s;
   padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: #272727;
-  }
+  place-items:
 }
 
 @media (min-width: 1024px) {

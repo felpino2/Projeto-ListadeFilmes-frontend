@@ -8,8 +8,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  width: 670px;
-  margin: 35px;
+  width: 700px;
+  margin: 30px;
   font-weight: normal;
 }
 
@@ -30,5 +30,6 @@ body {
 }
 
 *{
-  margin: 10px;
+  margin-top: 6px;
+  margin-left: 18px;
 }
