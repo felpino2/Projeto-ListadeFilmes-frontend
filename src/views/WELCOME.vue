@@ -1,5 +1,7 @@
 <script setup>
 
+import slider from "../components/JSslider.vue"
+
 </script>
 
 <template>
@@ -18,8 +20,14 @@
       <RouterLink to="/login"><button type="reset" class="register-button">JOIN FOR FREE</button></RouterLink>
         </div>
     <div>
-      <RouterLink to="/more"><u>LEARN MORE</u></RouterLink>
+      <a href="more"><u>LEARN MORE</u></a>
     </div>
+  <div class="hidden">
+    ;-(
+  </div>
+  </div>
+  <div>
+    :-)
   </div>
 
 </template>
