@@ -19,7 +19,7 @@ const router = createRouter({
       component: LISTS
     },
     {
-      path: '/login',
+      path: '/register',
       component: ACCOUNT
     }
   ]

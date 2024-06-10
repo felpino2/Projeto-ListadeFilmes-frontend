@@ -17,7 +17,7 @@ import slider from "../components/JSslider.vue"
       <h2>
         Keep in touch with your favorite characters, track their stories and continuity - all in one site.
       </h2>
-      <RouterLink to="/login"><button type="reset" class="register-button">JOIN FOR FREE</button></RouterLink>
+      <RouterLink to="/register"><button type="reset" class="register-button">JOIN FOR FREE</button></RouterLink>
         </div>
     <div>
       <a href="more"><u>LEARN MORE</u></a>
