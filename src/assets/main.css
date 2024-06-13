@@ -8,16 +8,9 @@
 }
 
 .body {
+  margin-top: 10px;
   height:70%;
   width:50%;
-}
-
-a,
-.white {
-  text-decoration: none;
-  color: #ffffff;
-  transition: 0.4s;
-  padding: 3px;
 }
 
 @media (min-width: 1024px) {

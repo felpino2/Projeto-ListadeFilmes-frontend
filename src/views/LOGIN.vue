@@ -1,23 +1,23 @@
 <template>
 
-    <div class = "form">
-      <div class = "account-form">
-        <h1>
-          Register
-        </h1>
-        <p>
+  <div class = "form">
+    <div class = "account-form">
+      <h1>
+        Login
+      </h1>
+      <p>
         Join our community of hero lovers and be up to date with your favorite universes.
-        </p>
-        <label>Username</label>
-        <input type="text" id="username">
-        <label>Password</label>
-        <input type="password" id="pwd">
-        <label>Confirm Password</label>
-        <input type="password" id="cnfrmpwd">
-        <a href="more"><u>Already have an account?</u></a>
-        <RouterLink to="/home"><button type="reset" class="register-button">JOIN FOR FREE</button></RouterLink>
-      </div>
+      </p>
+      <label>Username</label>
+      <input type="text" id="username">
+      <label>Password</label>
+      <input type="password" id="pwd">
+      <label>Confirm Password</label>
+      <input type="password" id="cnfrmpwd">
+      <a href="more"><u>Already have an account?</u></a>
+      <RouterLink to="/home"><button type="reset" class="register-button">JOIN FOR FREE</button></RouterLink>
     </div>
+  </div>
 
 </template>
 

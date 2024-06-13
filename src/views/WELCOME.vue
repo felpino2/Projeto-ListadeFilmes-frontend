@@ -6,7 +6,7 @@
 
 <div>
     <div class = "header">
-  <u>SIGN IN</u><u>CREATE ACCOUNT</u><U>FILMS</U>
+      <u><RouterLink to="/login">SIGN IN</RouterLink><RouterLink to="/register">CREATE ACCOUNT</RouterLink></u>
     </div>
     <div class="body">
       <h1>
@@ -14,30 +14,68 @@
       </h1>
       <h2>
         Keep in touch with your favorite characters, track their stories and continuity - all in one site.
+        <RouterLink to="/register"><button type="reset" class="register-button">JOIN FOR FREE</button></RouterLink>
       </h2>
-      <RouterLink to="/register"><button type="reset" class="register-button">JOIN FOR FREE</button></RouterLink>
-        </div>
-    <div class = "header">
-    <a href="more"><u>LEARN MORE</u></a>
+      <div class = "footer">
+        <a href="more"><u>LEARN MORE</u></a>
+      </div>
     </div>
+  <div>
+    <h3>
+      What's new today?
+    </h3>
+    <h2>
+      Tired of trying to figure out the continuity of the latest releases?
+      Heroflix has the perfect fix for you.
+    </h2>
+    <p>
+      All of your favorites - and more!
+    </p>
   </div>
-
+  </div>
 </template>
 
 <style scoped>
 
+a {
+
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
 .header {
 
   letter-spacing: 2px;
-  margin-top: 70px;
+  margin-top: 80px;
   font-size: 1.2rem;
   margin-left: -5px;
+  width: 800px;
 
 }
 
 h1 {
 
-  margin-top: 100px;
+  margin-top: 130px;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+  font-size: 4.2rem;
+  font-weight: bolder;
+
+}
+
+h2 {
+
+  margin-top: 20px;
+  letter-spacing: -1px;
+  font-size: 3.2rem;
+  font-weight: lighter;
+  width: 700px;
+
+}
+
+h3 {
+
   margin-bottom: 10px;
   letter-spacing: -1px;
   font-size: 4rem;
@@ -45,18 +83,9 @@ h1 {
 
 }
 
-h2 {
-
-  letter-spacing: -1px;
-  font-size: 3rem;
-  font-weight: lighter;
-  width: 700px;
-
-}
-
 .register-button {
 
-  margin-top: 15px;
+  margin-top: 70px;
   background-color: #FF914D;
   border: 1px;
   border-radius: 50px;
@@ -67,8 +96,32 @@ h2 {
   font-weight: lighter;
   width: 290px;
   height: 80px;
-  margin-bottom: -50px;
+  margin-bottom: -100px;
+  margin-left: -50px;
+
+}
+
+.footer {
+
+  margin-top: 120px;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
   margin-left: -5px;
+
+}
+
+p {
+
+  letter-spacing: -1px;
+  font-size: 2rem;
+  font-weight: lighter;
+  width: 700px;
+
+}
+
+.slider {
+
+
 
 }
 
