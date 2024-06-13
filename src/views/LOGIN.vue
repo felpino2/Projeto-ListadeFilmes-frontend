@@ -3,25 +3,37 @@
   <div class = "form">
     <div class = "account-form">
       <h1>
+        <RouterLink to="/"><img src="../assets/images/logo1.png" class = "logo" alt = "heroflix"/></RouterLink>
+      </h1>
+      <h1>
         Login
       </h1>
       <p>
-        Join our community of hero lovers and be up to date with your favorite universes.
+        We are glad to have you as a part of our dedicated community.
       </p>
       <label>Username</label>
       <input type="text" id="username">
       <label>Password</label>
       <input type="password" id="pwd">
-      <label>Confirm Password</label>
-      <input type="password" id="cnfrmpwd">
-      <a href="more"><u>Already have an account?</u></a>
-      <RouterLink to="/home"><button type="reset" class="register-button">JOIN FOR FREE</button></RouterLink>
+      <a href="/register"><u>Doesn't have an account?</u></a>
+      <RouterLink to="/home"><button type="reset" class="register-button">SIGN IN</button></RouterLink>
     </div>
   </div>
 
 </template>
 
 <style scoped>
+
+.logo {
+
+  border: 1px;
+  border-radius: 10px;
+  padding: 1px;
+  width:250px;
+  margin-left: -55px;
+  margin-bottom: -30px;
+
+}
 
 .form {
 
@@ -30,7 +42,7 @@
   width: 500px;
   height: 90%;
   left: 50%;
-  margin: 0 0 0 -250px;
+  margin: 5px 0 0 -250px;
   overflow: hidden;
   font-size: 1rem;
   font-weight: lighter;
@@ -46,7 +58,13 @@
   height: 90%;
   width: 100%;
   margin-left: 0;
-  margin-top: 10%;
+  margin-top: 19%;
+
+}
+
+.account-form label {
+
+  font-weight: bold;
 
 }
 
@@ -64,13 +82,15 @@
   text-align: center;
   display: block;
   width: 82%;
+  color: #272727;
 
 }
 
 .form h1 {
 
-  margin-left: 145px;
-  color: #181818;
+  margin-top: -10px;
+  color: #272727;
+  margin-left: 180px;
   font-size: 3rem;
   font-weight: bolder;
   letter-spacing: 2px;
@@ -79,7 +99,7 @@
 
 .register-button {
 
-  margin-top: 15px;
+  margin-top: 40px;
   background-color: #FF914D;
   border: 1px;
   border-radius: 50px;
@@ -91,7 +111,14 @@
   width: 290px;
   height: 80px;
   margin-bottom: -50px;
-  margin-left: 55px;
+  margin-left: 100px;
+
+}
+a {
+
+  margin-left: 1px;
+  text-decoration: none;
+  color: #272727;
 
 }
 
