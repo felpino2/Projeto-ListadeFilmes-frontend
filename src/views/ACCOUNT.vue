@@ -44,7 +44,7 @@
   width: 500px;
   height: 90%;
   left: 50%;
-  margin: 5px 0 0 -250px;
+  margin: -20px 0 0 -250px;
   overflow: hidden;
   font-size: 1rem;
   font-weight: lighter;
@@ -60,7 +60,7 @@
   height: 90%;
   width: 100%;
   margin-left: 0;
-  margin-top: 19%;
+  margin-top: 15%;
 
 }
 
@@ -85,17 +85,18 @@
   display: block;
   width: 82%;
   color: #272727;
+  margin-top: 10px;
 
 }
 
 .form h1 {
 
-  margin-top: -10px;
   color: #272727;
-  margin-left: 145px;
+  margin-left: 130px;
   font-size: 3rem;
   font-weight: bolder;
   letter-spacing: 2px;
+  margin: 0 0 0 130px;
 
 }
 

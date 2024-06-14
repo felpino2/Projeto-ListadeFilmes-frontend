@@ -1,5 +1,16 @@
 <script>
 
+import JSslider from "../components/JSslider.vue"
+
+export default {
+
+  components: {
+    JSslider
+  }
+
+}
+
+
 </script>
 
 <template>
@@ -33,6 +44,12 @@
     </p>
   </div>
   </div>
+
+  <div class="header">
+
+    <JSslider  :teste="'linha'"/>
+
+  </div>
 </template>
 
 <style scoped>
@@ -49,18 +66,19 @@ a {
   letter-spacing: 2px;
   margin-top: 80px;
   font-size: 1.2rem;
-  margin-left: -5px;
+  margin-left: -50px;
   width: 800px;
 
 }
 
 h1 {
 
-  margin-top: 130px;
+  margin-top: 100px;
   margin-bottom: 10px;
   letter-spacing: -1px;
-  font-size: 4.2rem;
+  font-size: 4rem;
   font-weight: bolder;
+  width: 800px;
 
 }
 
@@ -68,9 +86,9 @@ h2 {
 
   margin-top: 20px;
   letter-spacing: -1px;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: lighter;
-  width: 700px;
+  width: 800px;
 
 }
 

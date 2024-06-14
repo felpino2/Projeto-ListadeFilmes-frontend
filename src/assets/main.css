@@ -10,7 +10,8 @@
 .body {
   margin-top: 10px;
   height:70%;
-  width:50%;
+  width:90%;
+  margin: 0 0 0 50px;
 }
 
 @media (min-width: 1024px) {

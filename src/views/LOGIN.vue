@@ -20,84 +20,85 @@
     </div>
   </div>
 
-</template>
+  </template>
 
-<style scoped>
+  <style scoped>
 
-.logo {
+  .logo {
 
   border: 1px;
   border-radius: 10px;
   padding: 1px;
   width:250px;
-  margin-left: -55px;
+  margin-left: -50px;
   margin-bottom: -30px;
 
-}
+  }
 
-.form {
+  .form {
 
   top: 0;
   position: absolute;
   width: 500px;
   height: 90%;
   left: 50%;
-  margin: 5px 0 0 -250px;
+  margin: -20px 0 0 -250px;
   overflow: hidden;
   font-size: 1rem;
   font-weight: lighter;
   letter-spacing: 1px;
   color: black;
 
-}
+  }
 
-.account-form {
+  .account-form {
 
   background-color: white;
   border-radius: 30px;
   height: 90%;
   width: 100%;
   margin-left: 0;
-  margin-top: 19%;
+  margin-top: 15%;
 
-}
+  }
 
-.account-form label {
+  .account-form label {
 
   font-weight: bold;
 
-}
+  }
 
-.account-form input{
+  .account-form input{
 
   display: block;
   margin-top: 10px;
   width: 80%;
   height: 5%;
 
-}
+  }
 
-.account-form p {
+  .account-form p {
 
   text-align: center;
   display: block;
   width: 82%;
   color: #272727;
+  margin-top: 10px;
 
-}
+  }
 
-.form h1 {
+  .form h1 {
 
-  margin-top: -10px;
   color: #272727;
-  margin-left: 180px;
+  margin-left: 130px;
   font-size: 3rem;
   font-weight: bolder;
   letter-spacing: 2px;
+  margin: 30px 0 0 165px;
 
-}
+  }
 
-.register-button {
+  .register-button {
 
   margin-top: 40px;
   background-color: #FF914D;
@@ -113,17 +114,17 @@
   margin-bottom: -50px;
   margin-left: 100px;
 
-}
-a {
+  }
+  a {
 
   margin-left: 1px;
   text-decoration: none;
   color: #272727;
 
-}
+  }
 
-</style>
+  </style>
 
-<script setup>
+  <script setup>
 
-</script>
+  </script>
