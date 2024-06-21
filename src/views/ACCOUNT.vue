@@ -81,7 +81,7 @@ h1 {
   font-size: 3rem;
   font-weight: bolder;
   letter-spacing: 2px;
-  margin: 0 0 30px 150px;
+  margin: 0 0 30px 130px;
 
 }
 

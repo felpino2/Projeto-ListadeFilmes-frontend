@@ -12,7 +12,7 @@
       <input type="text" id="username">
       <label>Password</label>
       <input type="password" id="pwd">
-      <a href="/register"><u>Doesn't have an account?</u></a>
+      <a href="/register"><u>Create an account now.</u></a>
       <RouterLink to="/home"><button type="reset" class="register-button">SIGN IN</button></RouterLink>
     </div>
   </div>
@@ -79,7 +79,7 @@
     font-size: 3rem;
     font-weight: bolder;
     letter-spacing: 2px;
-    margin: 0 0 30px 180px;
+    margin: 0 0 30px 170px;
 
   }
 

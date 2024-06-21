@@ -4,6 +4,7 @@ import WELCOME from "../views/WELCOME.vue";
 import LISTS from "../views/LISTS.vue";
 import ACCOUNT from "../views/ACCOUNT.vue";
 import LOGIN from "@/views/LOGIN.vue";
+import MOVIE from "@/views/MOVIE.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -26,6 +27,10 @@ const router = createRouter({
     {
       path: '/login',
       component: LOGIN
+    },
+    {
+      path: '/movie',
+      component: MOVIE
     }
   ]
 })

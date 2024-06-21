@@ -13,13 +13,19 @@
 
     </div>
     <div class="body">
-      search bar
+      search bar 1
     </div>
     <div class="body">
-      main films
+      main films title
+      <div>
+        films
+      </div>
     </div>
     <div class="body">
-      lists
+      list title
+      <div>
+        lists
+      </div>
     </div>
     <div class="footer">
       <div class="bottomnav">
@@ -61,7 +67,7 @@ h1 {
   height: 50px;
   margin: 0 0 0 -165px;
   display: grid;
-  color: white;
+  color: grey;
   background-color: #272727;
 }
 
