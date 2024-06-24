@@ -15,7 +15,7 @@ export default {
 
 <template>
 
-<div>
+  <div>
     <div class = "header">
       <u><RouterLink to="/login">SIGN IN</RouterLink><RouterLink to="/register">CREATE ACCOUNT</RouterLink></u>
     </div>
@@ -27,27 +27,36 @@ export default {
         Keep in touch with your favorite characters, track their stories and continuity - all in one site.
         <RouterLink to="/register"><button type="reset" class="register-button">JOIN FOR FREE</button></RouterLink>
       </h2>
+
       <div class = "footer">
-        <a href="more"><u>LEARN MORE</u></a>
+        <label for="toggle">
+          <u>LEARN MORE</u>
+        </label>
+
+        <input type="checkbox" id="toggle">
+        <div id="mostra">
+          <h3>
+            What's new today?
+          </h3>
+          <h2>
+            Tired of trying to figure out the continuity of the latest releases?
+            Heroflix has the perfect fix for you.
+          </h2>
+          <p>
+            All of your favorites - and more!
+          </p>
+        </div>
+
       </div>
+
     </div>
-  <div>
-    <h3>
-      What's new today?
-    </h3>
-    <h2>
-      Tired of trying to figure out the continuity of the latest releases?
-      Heroflix has the perfect fix for you.
-    </h2>
-    <p>
-      All of your favorites - and more!
-    </p>
+
   </div>
-  </div>
+
 
   <div class="header">
 
-    <JSslider  :teste="'linha'"/>
+    <JSslider :teste="'linha'"/>
 
   </div>
 </template>
@@ -135,6 +144,27 @@ p {
   font-weight: lighter;
   width: 700px;
 
+}
+
+#toggle {
+  display:none;
+}
+
+label {
+  -webkit-appearance: push-button;
+  -moz-appearance: button;
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#mostra {
+  margin: 0 0 0 10px;
+  display:none;
+}
+
+#toggle:checked ~ #mostra {
+  display:block;
 }
 
 .slider {

@@ -1,7 +1,10 @@
-<template>
+<script setup>
 
-    <div class = "form">
-      <div class = "account-form">
+</script>
+
+<template>
+    <div class="form">
+      <div class="account-form">
         <h1>
           Register
         </h1>
@@ -18,7 +21,6 @@
         <RouterLink to="/home"><button type="reset" class="register-button">JOIN FOR FREE</button></RouterLink>
       </div>
     </div>
-
 </template>
 
 <style scoped>
@@ -59,7 +61,7 @@
 .account-form input{
 
   display: block;
-  margin-top: 10px;
+  margin-top: -20px;
   width: 80%;
   height: 5%;
 
@@ -81,7 +83,7 @@ h1 {
   font-size: 3rem;
   font-weight: bolder;
   letter-spacing: 2px;
-  margin: 0 0 30px 130px;
+  margin-left: 150px;
 
 }
 
@@ -111,7 +113,3 @@ a {
 }
 
 </style>
-
-<script setup>
-
-</script>

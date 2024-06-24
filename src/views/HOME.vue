@@ -10,28 +10,25 @@
       <div class="topnav">
         <h1>HEROFLIX</h1>
       </div>
-
     </div>
+
     <div class="body">
       search bar 1
     </div>
+
     <div class="body">
       main films title
       <div>
         films
       </div>
     </div>
-    <div class="body">
-      list title
-      <div>
-        lists
-      </div>
-    </div>
+
     <div class="footer">
       <div class="bottomnav">
         SITE MADE AS A FINAL PROJECT
       </div>
     </div>
+
   </div>
 
 </template>
