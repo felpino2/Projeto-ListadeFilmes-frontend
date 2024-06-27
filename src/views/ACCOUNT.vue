@@ -1,27 +1,58 @@
 <script setup>
+import { ref } from 'vue'
+import axios from 'axios'
+import { useRouter } from 'vue-router'
 
+const username = ref('')
+const password = ref('')
+const confirmPassword = ref('')
+const router = useRouter()
+
+const registerUser = async () => {
+  if (password.value !== confirmPassword.value) {
+    alert('Passwords do not match')
+    return
+  }
+
+  try {
+    const response = await axios.post('http://localhost:8080/register', {
+      username: username.value,
+      password: password.value
+    })
+
+    if (response.status === 200) {
+      router.push('/home')
+    } else {
+      alert('Failed to register. Please try again.')
+    }
+  } catch (error) {
+    console.error('Error registering user:', error)
+    alert('Failed to register. Please try again.')
+  }
+}
 </script>
 
 <template>
-    <div class="form">
-      <div class="account-form">
-        <h1>
-          Register
-        </h1>
-        <p>
+  <div class="form">
+    <div class="account-form">
+      <h1>
+        Register
+      </h1>
+      <p>
         Join our community of hero lovers and be up to date with your favorite universes.
-        </p>
-        <label>Username</label>
-        <input type="text" id="username">
-        <label>Password</label>
-        <input type="password" id="pwd">
-        <label>Confirm Password</label>
-        <input type="password" id="cnfrmpwd">
-        <a href="/login"><u>Already have an account?</u></a>
-        <RouterLink to="/home"><button type="reset" class="register-button">JOIN FOR FREE</button></RouterLink>
-      </div>
+      </p>
+      <label>Username</label>
+      <input type="text" v-model="username">
+      <label>Password</label>
+      <input type="password" v-model="password">
+      <label>Confirm Password</label>
+      <input type="password" v-model="confirmPassword">
+      <a href="/login"><u>Already have an account?</u></a>
+      <button type="button" class="register-button" @click="registerUser">JOIN FOR FREE</button>
     </div>
+  </div>
 </template>
+
 
 <style scoped>
 
