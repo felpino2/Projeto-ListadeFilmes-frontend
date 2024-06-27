@@ -3,23 +3,14 @@
 </script>
 
 <template>
-
-  <div>
-    imagem
-  </div>
-  <div>
-    todo o resto
-    <div>
-      todo o resto
+  <div class="container">
+    <div class="header">
+  lol
     </div>
-  </div>
-  <div>
-    timeline
   </div>
 
 </template>
 
 <style>
-
 
 </style>

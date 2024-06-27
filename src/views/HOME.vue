@@ -6,7 +6,6 @@
 
   <div class="container">
     <div class="header">
-
       <div class="topnav">
         <h1>HEROFLIX</h1>
       </div>

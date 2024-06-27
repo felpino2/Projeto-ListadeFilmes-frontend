@@ -61,7 +61,7 @@
 .account-form input{
 
   display: block;
-  margin-top: -20px;
+  margin-top: 10px;
   width: 80%;
   height: 5%;
 
