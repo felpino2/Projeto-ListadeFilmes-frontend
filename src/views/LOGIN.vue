@@ -1,5 +1,37 @@
 <script setup>
+import { ref } from 'vue'
+import axios from 'axios'
+import { useRouter } from 'vue-router'
 
+const username = ref('')
+const password = ref('')
+const router = useRouter()
+
+const loginUser = async () => {
+  console.log("Logging in with data:", {
+    username: username.value,
+    password: password.value
+  })
+
+  try {
+    const response = await axios.post('http://localhost:8080/login', {
+      username: username.value,
+      password: password.value
+    })
+
+    console.log("Response:", response)
+
+    if (response.status === 200) {
+      alert('Login successful!')
+      router.push('/home')
+    } else {
+      alert('Failed to login. Please try again.')
+    }
+  } catch (error) {
+    console.error('Error logging in:', error)
+    alert('Failed to login. Please try again.')
+  }
+}
 </script>
 
 <template>

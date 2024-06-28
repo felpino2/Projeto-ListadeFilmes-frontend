@@ -14,22 +14,31 @@ const registerUser = async () => {
     return
   }
 
+  console.log("Sending data:", {
+    username: username.value,
+    password: password.value
+  })
+
   try {
     const response = await axios.post('http://localhost:8080/register', {
-      username: username.value,
-      password: password.value
+      nome: username.value,
+      senha: password.value
     })
+    console.log("Response:", response)
 
-    if (response.status === 200) {
+    if (response.status === 201) {
+      alert('User registered successfully!')
       router.push('/home')
     } else {
-      alert('Failed to register. Please try again.')
+
+      alert('Talvez tenha ido.')
     }
   } catch (error) {
     console.error('Error registering user:', error)
     alert('Failed to register. Please try again.')
   }
 }
+
 </script>
 
 <template>
